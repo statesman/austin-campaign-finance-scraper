@@ -1,5 +1,5 @@
 # Austin campaign finance scraper
-A Fabric script to scrape City of Austin campaign finance reports (PDFs + metadata), 2009-2016.
+A Python script to scrape City of Austin campaign finance reports (PDFs + metadata), 2009-2016.
 
 ### Requirements
 `virtualenv`<br>
