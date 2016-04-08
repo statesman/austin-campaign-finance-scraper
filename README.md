@@ -26,5 +26,8 @@ After running the script, you should end up with:<br>
 2. A JSON metadata file.<br>
 3. A zipfile containing (1) and (2).
 
+### Git-ing the ZIP file
+You'll need [Git Large File Storage](https://git-lfs.github.com/) to commit the ZIP file, which clocks in at ~650MB.
+
 ### Todo
 Refactor for DRY-ness.

@@ -108,3 +108,6 @@ pip-selfcheck.json
 
 ### PDF directories ###
 20[0-9]*
+
+### Keep that big zip file ###
+!*.zip
