@@ -32,6 +32,7 @@ def scrapeEm():
     for page in new_style_page_list:
         r = requests.get(page)
         soup = BeautifulSoup(r.text, "html.parser")
+        [e.extract() for e in soup.find_all("br")]
         trs = soup.find_all("tr", {"bgcolor": "#ffffff"})
         for row in trs:
             record = {}
@@ -94,12 +95,13 @@ def scrapeEm():
     for page in old_style_page_list:
         r = requests.get(page)
         soup = BeautifulSoup(r.text, "html.parser")
+        [e.extract() for e in soup.find_all("br")]
         trs = soup.find_all("tr", {"valign": "middle"})
         for row in trs:
             record = {}
             col = row.find_all('td')
 
-            filer = col[0].p.string.strip()
+            filer = col[0].p.text.strip()
             print("pulling data for " + filer)
             record['filer'] = filer
 

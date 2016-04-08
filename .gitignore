@@ -105,3 +105,6 @@ ENV/
 pyvenv.cfg
 .venv
 pip-selfcheck.json
+
+### PDF directories ###
+20[0-9]*
