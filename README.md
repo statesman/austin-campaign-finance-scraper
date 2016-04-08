@@ -9,6 +9,7 @@ A Python script to scrape City of Austin campaign finance reports (PDFs + metada
 Clone this repo, activate the virtual environment, install the requirements.
 ```shell
 $ git clone git@github.com:statesman/austin-campaign-finance-scraper.git
+$ virtualenv austin-campaign-finance-scraper
 $ cd austin-campaign-finance-scraper
 $ source bin/activate
 $ pip install -r requirements.txt
